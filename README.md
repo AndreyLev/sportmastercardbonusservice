@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/AndreyLev/sportmastercardbonusservice.svg?branch=master)](https://travis-ci.org/AndreyLev/sportmastercardbonusservice)
