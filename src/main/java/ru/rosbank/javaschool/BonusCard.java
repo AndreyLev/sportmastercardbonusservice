@@ -12,4 +12,6 @@ public class BonusCard {
 
     public final static int amountPerBonusUnit = 1000;
 
+    public final static int zero = 0;
+
 }

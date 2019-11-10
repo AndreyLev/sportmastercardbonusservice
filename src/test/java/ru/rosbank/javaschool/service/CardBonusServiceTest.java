@@ -12,7 +12,7 @@ class CardBonusServiceTest {
 
         int result = cardBonusService.bonusForCurrentPurchase( 8370.20, 1);
 
-        assertEquals(result, 0);
+        assertEquals(0, result);
     }
 
     @Test
@@ -21,7 +21,7 @@ class CardBonusServiceTest {
 
         int result = cardBonusService.bonusForCurrentPurchase(4550.70, 5320);
 
-        assertEquals(result, 250);
+        assertEquals(250, result);
     }
 
     @Test
@@ -30,7 +30,7 @@ class CardBonusServiceTest {
 
         int result = cardBonusService.bonusForCurrentPurchase(15001, 3999);
 
-        assertEquals(result, 210);
+        assertEquals(210, result);
     }
 
     @Test
@@ -39,7 +39,7 @@ class CardBonusServiceTest {
 
         int result = cardBonusService.bonusForCurrentPurchase(230568.76, 13700);
 
-        assertEquals(result, 1300);
+        assertEquals(1300, result);
     }
 
 }
