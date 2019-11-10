@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/AndreyLev/sportmastercardbonusservice.svg?branch=master)](https://travis-ci.org/AndreyLev/sportmastercardbonusservice)
+[![Build Status](https://travis-ci.org/AndreyLev/sportmastercardbonusservice.svg?branch=master)](https://travis-ci.org/AndreyLev/sportmastercardbonusservice) [![codecov](https://codecov.io/gh/AndreyLev/sportmastercardbonusservice/branch/master/graph/badge.svg)](https://codecov.io/gh/AndreyLev/sportmastercardbonusservice)
