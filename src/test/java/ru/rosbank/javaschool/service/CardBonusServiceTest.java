@@ -42,4 +42,12 @@ class CardBonusServiceTest {
         assertEquals(1300, result);
     }
 
+    @Test
+    void shouldBonusWhenPurchaseIsNegative() {
+        CardBonusService cardBonusService = new CardBonusService();
+
+        int result = cardBonusService.bonusForCurrentPurchase( 8370.20, -2030);
+
+        assertEquals(0, result);
+    }
 }
