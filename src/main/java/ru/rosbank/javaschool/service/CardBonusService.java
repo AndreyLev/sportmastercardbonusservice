@@ -8,6 +8,8 @@ public class CardBonusService {
 
         int bonus = 0;
 
+        if (currentPurchaseValue > BonusCard.zero) {
+
             if (accumulatedAmount >= BonusCard.blueCardMinAmount && accumulatedAmount < BonusCard.silverCardMinAmount) {
                 bonus = BonusCard.blueCardBonusValue * (int) Math.floor(currentPurchaseValue / BonusCard.amountPerBonusUnit);
             }
@@ -19,6 +21,8 @@ public class CardBonusService {
             if (accumulatedAmount >= BonusCard.goldCardMinAmount) {
                 bonus = BonusCard.goldCardBonusValue * (int) Math.floor(currentPurchaseValue / BonusCard.amountPerBonusUnit);
             }
+
+        }
 
         return bonus;
     }
