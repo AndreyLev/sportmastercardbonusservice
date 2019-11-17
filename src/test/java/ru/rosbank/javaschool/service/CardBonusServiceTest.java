@@ -10,7 +10,7 @@ class CardBonusServiceTest {
     void shouldBonusBeZero() {
         CardBonusService cardBonusService = new CardBonusService();
 
-        int result = cardBonusService.bonusForCurrentPurchase( 8370.20, 1);
+        int result = cardBonusService.bonusForCurrentPurchase( 8370, 1);
 
         assertEquals(0, result);
     }
@@ -19,7 +19,7 @@ class CardBonusServiceTest {
     void isThereABonusOnABlueCard() {
         CardBonusService cardBonusService = new CardBonusService();
 
-        int result = cardBonusService.bonusForCurrentPurchase(4550.70, 5320);
+        int result = cardBonusService.bonusForCurrentPurchase(4550, 5320);
 
         assertEquals(250, result);
     }
@@ -37,7 +37,7 @@ class CardBonusServiceTest {
     void isThereABonusOnAGoldCard() {
         CardBonusService cardBonusService = new CardBonusService();
 
-        int result = cardBonusService.bonusForCurrentPurchase(230568.76, 13700);
+        int result = cardBonusService.bonusForCurrentPurchase(230568, 13700);
 
         assertEquals(1300, result);
     }
@@ -46,7 +46,7 @@ class CardBonusServiceTest {
     void shouldBonusWhenPurchaseIsNegative() {
         CardBonusService cardBonusService = new CardBonusService();
 
-        int result = cardBonusService.bonusForCurrentPurchase( 8370.20, -2030);
+        int result = cardBonusService.bonusForCurrentPurchase( 8370, -2030);
 
         assertEquals(0, result);
     }
