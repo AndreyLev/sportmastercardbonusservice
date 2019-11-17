@@ -4,7 +4,8 @@ import ru.rosbank.javaschool.BonusCard;
 
 public class CardBonusService {
 
-    public int bonusForCurrentPurchase(double accumulatedAmount, double currentPurchaseValue) {
+
+    public int bonusForCurrentPurchase(int accumulatedAmount, int currentPurchaseValue) {
 
         int bonus = 0;
 
@@ -23,6 +24,7 @@ public class CardBonusService {
             }
 
         }
+
 
         return bonus;
     }
